@@ -1,0 +1,47 @@
+[
+  {
+    "id": "1",
+    "title": "Laptop Pro X1",
+    "description": "A high-performance laptop with a sleek design, perfect for professionals and gamers.",
+    "price": 1299.99,
+    "image": "https://t4.ftcdn.net/jpg/04/17/28/93/360_F_417289346_hrs0D4Lo8dSv3aWDqkQpRB0U9PbtFX6n.jpg",
+    "category": "Laptops",
+    "companies": ["TechCorp", "GadgetWorld", "ElectroMart"]
+  },
+  {
+    "id": "2",
+    "title": "Ultra HD Monitor 27\"",
+    "description": "A 27-inch ultra high-definition monitor with vibrant colors and excellent clarity.",
+    "price": 499.99,
+    "image": "https://example.com/images/ultra-hd-monitor.png",
+    "category": "Monitors",
+    "companies": ["ScreenMasters", "VisualTech", "ElectroMart"]
+  },
+  {
+    "id": "3",
+    "title": "Gaming Mouse Elite",
+    "description": "An ergonomic gaming mouse with customizable buttons and RGB lighting.",
+    "price": 89.99,
+    "image": "https://example.com/images/gaming-mouse-elite.png",
+    "category": "Peripherals",
+    "companies": ["GamerGear", "TechCorp", "GadgetWorld"]
+  },
+  {
+    "id": "4",
+    "title": "Wireless Keyboard Pro",
+    "description": "A premium wireless keyboard with quiet keys and long battery life.",
+    "price": 129.99,
+    "image": "https://example.com/images/wireless-keyboard-pro.png",
+    "category": "Peripherals",
+    "companies": ["KeyTech", "GadgetWorld", "ElectroMart"]
+  },
+  {
+    "id": "5",
+    "title": "External SSD 1TB",
+    "description": "A high-speed external SSD with 1TB of storage, ideal for fast data transfer.",
+    "price": 199.99,
+    "image": "https://example.com/images/external-ssd-1tb.png",
+    "category": "Storage",
+    "companies": ["TechCorp", "StoragePlus", "GadgetWorld"]
+  }
+]
