@@ -4,7 +4,7 @@
     "title": "Laptop Pro X1",
     "description": "A high-performance laptop with a sleek design, perfect for professionals and gamers.",
     "price": 1299.99,
-    "image": "https://t4.ftcdn.net/jpg/04/17/28/93/360_F_417289346_hrs0D4Lo8dSv3aWDqkQpRB0U9PbtFX6n.jpg",
+    "image": "https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4=",
     "category": "Laptops",
     "companies": ["TechCorp", "GadgetWorld", "ElectroMart"]
   },
@@ -13,7 +13,7 @@
     "title": "Ultra HD Monitor 27\"",
     "description": "A 27-inch ultra high-definition monitor with vibrant colors and excellent clarity.",
     "price": 499.99,
-    "image": "https://example.com/images/ultra-hd-monitor.png",
+    "image": "https://t4.ftcdn.net/jpg/04/17/28/93/360_F_417289346_hrs0D4Lo8dSv3aWDqkQpRB0U9PbtFX6n.jpg",
     "category": "Monitors",
     "companies": ["ScreenMasters", "VisualTech", "ElectroMart"]
   },
@@ -22,7 +22,7 @@
     "title": "Gaming Mouse Elite",
     "description": "An ergonomic gaming mouse with customizable buttons and RGB lighting.",
     "price": 89.99,
-    "image": "https://example.com/images/gaming-mouse-elite.png",
+    "image": "https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4=",
     "category": "Peripherals",
     "companies": ["GamerGear", "TechCorp", "GadgetWorld"]
   },
