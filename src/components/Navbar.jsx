@@ -16,7 +16,7 @@ export default function Navbar({ productId, setProductId, handleSearch }) {
           />
         </div>
         <div className="input-container relative">
-          <i class="fa-solid fa-magnifying-glass absolute left-3 top-[14px] text-paragraphGrey"></i>
+          <i className="fa-solid fa-magnifying-glass absolute left-3 top-[14px] text-paragraphGrey"></i>
           <input
             id="search-input"
             placeholder="Search..."

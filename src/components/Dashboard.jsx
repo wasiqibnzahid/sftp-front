@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
+import Button from "./Button.jsx";
 import Navbar from "./Navbar.jsx";
+import { Chart as ChartJS } from "chart.js/auto";
 import { Line } from "react-chartjs-2";
 import { useNavigate } from "react-router-dom";
 
@@ -41,17 +43,17 @@ export default function Dashboard() {
           </h1>
         </div>
         <div className="dashboard-cards grid grid-cols-1 gap-6 px-12 sm:grid-cols-2 md:grid-cols-3">
-          <div class="dashboard-card bg-white flex animate-[fadeInUp_0.5s_ease_0.5s_forwards] rounded-3xl bg-primaryWhite p-6 opacity-0">
+          <div className="dashboard-card bg-white flex animate-[fadeInUp_0.5s_ease_0.5s_forwards] rounded-3xl bg-primaryWhite p-6 opacity-0">
             <div>
-              <div class="mb-4 text-3xl">
+              <div className="mb-4 text-3xl">
                 <div className="svg-container flex h-16 w-16 items-center justify-center rounded-full bg-[#7A83C6]">
-                  <i class="fas fa-dollar-sign s text-primaryWhite"></i>
+                  <i className="fas fa-dollar-sign s text-primaryWhite"></i>
                 </div>
               </div>
-              <div class="avenir-heavy mb-2 text-2xl text-primaryGrey">
+              <div className="avenir-heavy mb-2 text-2xl text-primaryGrey">
                 Total Sales
               </div>
-              <div class="avenir-heavy text-4xl">$15,000</div>
+              <div className="avenir-heavy text-4xl">$15,000</div>
             </div>
             <div className="flex w-full items-center justify-center">
               <div className="progress relative h-24 w-24 rounded-full">
@@ -75,17 +77,17 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div class="dashboard-card bg-white flex animate-[fadeInUp_0.5s_ease_0.5s_forwards] rounded-3xl bg-primaryWhite p-6 opacity-0">
+          <div className="dashboard-card bg-white flex animate-[fadeInUp_0.5s_ease_0.5s_forwards] rounded-3xl bg-primaryWhite p-6 opacity-0">
             <div>
-              <div class="mb-4 text-3xl">
+              <div className="mb-4 text-3xl">
                 <div className="svg-container flex h-16 w-16 items-center justify-center rounded-full bg-[#EE7B88]">
-                  <i class="fas fa-credit-card text-primaryWhite"></i>
+                  <i className="fas fa-credit-card text-primaryWhite"></i>
                 </div>
               </div>
-              <div class="avenir-heavy mb-2 text-nowrap text-2xl text-primaryGrey">
+              <div className="avenir-heavy mb-2 text-nowrap text-2xl text-primaryGrey">
                 Total Expenses
               </div>
-              <div class="avenir-heavy text-4xl">$5,000</div>
+              <div className="avenir-heavy text-4xl">$5,000</div>
             </div>
             <div className="flex w-full items-center justify-center">
               <div className="progress relative h-24 w-24 rounded-full">
@@ -109,17 +111,17 @@ export default function Dashboard() {
             </div>
           </div>
 
-          <div class="dashboard-card bg-white flex animate-[fadeInUp_0.5s_ease_0.5s_forwards] rounded-3xl bg-primaryWhite p-6 opacity-0">
+          <div className="dashboard-card bg-white flex animate-[fadeInUp_0.5s_ease_0.5s_forwards] rounded-3xl bg-primaryWhite p-6 opacity-0">
             <div>
-              <div class="text-yellow-500 mb-4 text-3xl">
+              <div className="text-yellow-500 mb-4 text-3xl">
                 <div className="svg-container flex h-16 w-16 items-center justify-center rounded-full bg-[#41EFBB]">
-                  <i class="fas fa-money-bill-wave text-primaryWhite"></i>
+                  <i className="fas fa-money-bill-wave text-primaryWhite"></i>
                 </div>
               </div>
-              <div class="avenir-heavy mb-2 text-nowrap text-2xl text-primaryGrey">
+              <div className="avenir-heavy mb-2 text-nowrap text-2xl text-primaryGrey">
                 Total Income
               </div>
-              <div class="avenir-heavy text-4xl">$10,000</div>
+              <div className="avenir-heavy text-4xl">$10,000</div>
             </div>
             <div className="flex w-full items-center justify-center">
               <div className="progress relative h-24 w-24 rounded-full">
@@ -191,61 +193,67 @@ export default function Dashboard() {
               New Arrivals:
             </h1>
             <div className="new-arrival-card-container flex flex-wrap justify-center gap-10">
-              <div class="new-arrival-card bg-white w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
+              <div className="new-arrival-card bg-white w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
                 <img
                   src="https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4="
                   alt="Product Image"
-                  class="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover"
                 />
-                <div class="p-4">
-                  <h2 class="avenir-medium mb-2 text-[22px]">Product Title</h2>
-                  <p class="avenir-heavy mb-2 text-[18px]">$299</p>
-                  <p class="avernir-light">
+                <div className="p-4">
+                  <h2 className="avenir-medium mb-2 text-[22px]">
+                    Product Title
+                  </h2>
+                  <p className="avenir-heavy mb-2 text-[18px]">$299</p>
+                  <p className="avernir-light">
                     This is a brief description of the product. It provides key
                     features and benefits.
                   </p>
                 </div>
               </div>
-              <div class="new-arrival-card bg-white w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
+              <div className="new-arrival-card bg-white w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
                 <img
                   src="https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4="
                   alt="Product Image"
-                  class="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover"
                 />
-                <div class="p-4">
-                  <h2 class="avenir-medium mb-2 text-[22px]">Product Title</h2>
-                  <p class="avenir-heavy mb-2 text-[18px]">$299</p>
-                  <p class="avernir-light">
+                <div className="p-4">
+                  <h2 className="avenir-medium mb-2 text-[22px]">
+                    Product Title
+                  </h2>
+                  <p className="avenir-heavy mb-2 text-[18px]">$299</p>
+                  <p className="avernir-light">
                     This is a brief description of the product. It provides key
                     features and benefits.
                   </p>
                 </div>
               </div>
-              <div class="new-arrival-card bg-white w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
+              <div className="new-arrival-card bg-white w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
                 <img
                   src="https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4="
                   alt="Product Image"
-                  class="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover"
                 />
-                <div class="p-4">
-                  <h2 class="avenir-medium mb-2 text-[22px]">Product Title</h2>
-                  <p class="avenir-heavy mb-2 text-[18px]">$299</p>
-                  <p class="avernir-light">
+                <div className="p-4">
+                  <h2 className="avenir-medium mb-2 text-[22px]">
+                    Product Title
+                  </h2>
+                  <p className="avenir-heavy mb-2 text-[18px]">$299</p>
+                  <p className="avernir-light">
                     This is a brief description of the product. It provides key
                     features and benefits.
                   </p>
                 </div>
               </div>
-              <div class="new-arrival-card bg-white w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
+              <div className="new-arrival-card bg-white w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
                 <img
                   src="https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4="
                   alt="Product Image"
-                  class="h-48 w-full object-cover"
+                  className="h-48 w-full object-cover"
                 />
-                <div class="p-4">
-                  <h2 class="mb-2 text-xl">Product Title</h2>
-                  <p class="text-gray-500 mb-2">$299</p>
-                  <p class="text-gray-700">
+                <div className="p-4">
+                  <h2 className="mb-2 text-xl">Product Title</h2>
+                  <p className="text-gray-500 mb-2">$299</p>
+                  <p className="text-gray-700">
                     This is a brief description of the product. It provides key
                     features and benefits.
                   </p>
