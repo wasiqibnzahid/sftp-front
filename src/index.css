@@ -32,7 +32,9 @@
   box-sizing: border-box;
 }
 /* Product.css */
-
+#root {
+  width: 100%;
+}
 /* Input Field Animations */
 #search-input {
   transition:
@@ -42,7 +44,7 @@
 
 #search-input:focus {
   width: 300px; /* Expand width on focus */
-  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5); /* Add a subtle shadow */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
 }
 
 #search-input.shake {

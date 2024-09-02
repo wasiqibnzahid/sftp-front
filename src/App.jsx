@@ -7,7 +7,7 @@ import "./App.css";
 function App() {
   return (
     <Router>
-      <div className="page-container">
+      <div className="page-container w-full">
         <Routes>
           <Route path="/" element={<Dashboard />} />
           <Route path="/product/:id" element={<Product />} />

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Button from "./Button.jsx";
-import { Chart as ChartJS } from "chart.js/auto";
+import Navbar from "./Navbar.jsx";
 import { Line } from "react-chartjs-2";
 import { useNavigate } from "react-router-dom";
 
@@ -30,28 +29,11 @@ export default function Dashboard() {
   });
   return (
     <>
-      <nav>
-        <div className="nav-container flex items-center justify-between p-8">
-          <div className="img-container">
-            <img
-              src="/logos/cxn_logo_slogan_galaxy_grey (1).png"
-              className="w-[200px]"
-            />
-          </div>
-          <div className="input-container relative">
-            <i class="fa-solid fa-magnifying-glass absolute left-3 top-[14px] text-paragraphGrey"></i>
-            <input
-              id="search-input"
-              placeholder="Search..."
-              type="search"
-              value={productId}
-              onChange={(e) => setProductId(e.target.value)}
-              className="avenir-light mr-3 w-[200px] rounded-md border border-solid border-resposeGrey p-[9px] pl-9 text-paragraphGrey outline-none focus:border-inputActive active:border-inputActive"
-            />
-            <Button text="Search" onClick={handleSearch}></Button>
-          </div>
-        </div>
-      </nav>
+      <Navbar
+        productId={productId}
+        setProductId={setProductId}
+        handleSearch={handleSearch}
+      />
       <div className="dashboard-container">
         <div className="dashboard-heading-container p-8">
           <h1 className="avenir-heavy animate-[fadeLeft_0.5s_ease_0.5s_forwards] text-[48px] opacity-0">

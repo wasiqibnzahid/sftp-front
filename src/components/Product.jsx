@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
-import Button from "./Button.jsx";
 import { useNavigate, useParams } from "react-router-dom";
 import ProductTable from "./ProductTable.jsx";
+import Navbar from "./Navbar.jsx";
 export default function Product() {
   const [productId, setProductId] = useState("");
   const [animationTrigger, setAnimationTrigger] = useState("");
@@ -59,31 +59,16 @@ export default function Product() {
   ];
   return (
     <>
-      <nav>
-        <div className="nav-container flex justify-between p-8">
-          <div className="img-container">
-            <a href="/">
-              <img
-                src="/logos/cxn_logo_slogan_galaxy_grey (1).png"
-                className="w-[200px]"
-              />
-            </a>
-          </div>
-          <div className="input-container">
-            <input
-              id="search-input"
-              type="search"
-              value={productId}
-              onChange={(e) => setProductId(e.target.value)}
-              className="avenir-light mr-3 w-[200px] rounded-md border border-solid border-resposeGrey p-[9px] text-paragraphGrey outline-none focus:border-inputActive active:border-inputActive"
-            />
-            <Button text="Search"></Button>
-          </div>
-        </div>
-      </nav>
+      <Navbar
+        productId={productId}
+        setProductId={setProductId}
+        handleSearch={handleSearch}
+      />
       {product ? (
-        <div className="product-page-container px-12" key={product.id}>
-          <h1 className="avenir-heavy mb-4 text-[48px]">Product Details:</h1>
+        <div className="product-page-container p-8" key={product.id}>
+          <h1 className="avenir-heavy mb-3 animate-[fadeLeft_0.5s_ease_forwards] text-[48px] opacity-0">
+            Product Details:
+          </h1>
           <div className="grid grid-cols-2 gap-8">
             <div className="img-container animate-[fadeInUp_0.5s_ease_forwards] border border-solid border-paragraphGrey">
               <img src={product.image} className="w-full" />
@@ -118,10 +103,9 @@ export default function Product() {
         </div>
       ) : (
         <div>
-          <h1 className="avenir-heavy mb-4 text-[48px]">Product Details:</h1>
-          <div className="flex items-center justify-center">
-            <h1 className="avenir-heavy mt-28 text-[48px]">Loading...</h1>
-          </div>
+          <h1 className="avenir-heavy mb-4 px-12 text-[48px]">
+            Product Details:
+          </h1>
         </div>
       )}
     </>
