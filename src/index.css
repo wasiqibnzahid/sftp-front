@@ -34,6 +34,7 @@
 /* Product.css */
 #root {
   width: 100%;
+  max-width: 1280px;
 }
 /* Input Field Animations */
 #search-input {
