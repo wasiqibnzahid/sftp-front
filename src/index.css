@@ -116,3 +116,6 @@ body {
   justify-content: center;
   align-items: center;
 }
+.price-analysis-container {
+  box-shadow: 0px 0px 50px rgb(158, 158, 158);
+}

@@ -3,45 +3,120 @@
     "id": "1",
     "title": "Laptop Pro X1",
     "description": "A high-performance laptop with a sleek design, perfect for professionals and gamers.",
-    "price": 1299.99,
     "image": "https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4=",
     "category": "Laptops",
-    "companies": ["TechCorp", "GadgetWorld", "ElectroMart"]
+    "companies": [
+      {
+        "name": "TechCorp",
+        "stock": 50,
+        "price": 1200
+      },
+      {
+        "name": "GadgetWorld",
+        "stock": 30,
+        "price": 1550
+      },
+      {
+        "name": "ElectroMart",
+        "stock": 20,
+        "price": 2099
+      }
+    ]
   },
   {
     "id": "2",
     "title": "Ultra HD Monitor 27\"",
     "description": "A 27-inch ultra high-definition monitor with vibrant colors and excellent clarity.",
-    "price": 499.99,
     "image": "https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4=",
     "category": "Monitors",
-    "companies": ["ScreenMasters", "VisualTech", "ElectroMart"]
+    "companies": [
+      {
+        "name": "ScreenMasters",
+        "stock": 100,
+        "price": 480
+      },
+      {
+        "name": "VisualTech",
+        "stock": 60,
+        "price": 499
+      },
+      {
+        "name": "ElectroMart",
+        "stock": 45,
+        "price": 520
+      }
+    ]
   },
   {
     "id": "3",
     "title": "Gaming Mouse Elite",
     "description": "An ergonomic gaming mouse with customizable buttons and RGB lighting.",
-    "price": 89.99,
     "image": "https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4=",
     "category": "Peripherals",
-    "companies": ["GamerGear", "TechCorp", "GadgetWorld"]
+    "companies": [
+      {
+        "name": "GamerGear",
+        "stock": 150,
+        "price": 85
+      },
+      {
+        "name": "TechCorp",
+        "stock": 75,
+        "price": 89.99
+      },
+      {
+        "name": "GadgetWorld",
+        "stock": 60,
+        "price": 92
+      }
+    ]
   },
   {
     "id": "4",
     "title": "Wireless Keyboard Pro",
     "description": "A premium wireless keyboard with quiet keys and long battery life.",
-    "price": 129.99,
     "image": "https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4=",
     "category": "Peripherals",
-    "companies": ["KeyTech", "GadgetWorld", "ElectroMart"]
+    "companies": [
+      {
+        "name": "KeyTech",
+        "stock": 120,
+        "price": 125
+      },
+      {
+        "name": "GadgetWorld",
+        "stock": 80,
+        "price": 129.99
+      },
+      {
+        "name": "ElectroMart",
+        "stock": 40,
+        "price": 135
+      }
+    ]
   },
   {
     "id": "5",
     "title": "External SSD 1TB",
     "description": "A high-speed external SSD with 1TB of storage, ideal for fast data transfer.",
-    "price": 199.99,
     "image": "https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4=",
     "category": "Storage",
-    "companies": ["TechCorp", "StoragePlus", "GadgetWorld"]
+    "companies": [
+      {
+        "name": "TechCorp",
+        "stock": 200,
+        "price": 190
+      },
+      {
+        "name": "StoragePlus",
+        "stock": 150,
+        "price": 195
+      },
+      {
+        "name": "GadgetWorld",
+        "stock": 100,
+        "price": 199.99
+      }
+    ]
   }
 ]
