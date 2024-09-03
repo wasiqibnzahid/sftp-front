@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Navbar from "./Navbar.jsx";
 import { useNavigate } from "react-router-dom";
-import PriceAnalysisTable from "./PriceAnalysisTable.jsx";
 
 export default function Dashboard() {
   const [productId, setProductId] = useState("");
@@ -48,21 +47,17 @@ export default function Dashboard() {
         handleSearch={handleSearch}
       />
       <div className="dashboard-container">
-        <div className="dashboard-heading-container p-8">
-          <h1 className="avenir-heavy animate-[fadeLeft_0.5s_ease_forwards] text-[48px] opacity-0">
-            DashBoard:
-          </h1>
-        </div>
-        <PriceAnalysisTable products={products} />
-
         <div className="dashboard-chat-orders-container grid p-8">
           <div className="new-products">
-            <h1 className="dashboard-chart avenir-heavy my-8 ml-10 mt-12 animate-[fadeLeft_0.5s_ease_1s_forwards] text-[38px] opacity-0">
-              New Arrivals:
-            </h1>
+            <div className="flex items-center justify-center p-8">
+              <h2 class="about-us-heading avenir-heavy relative mb-8 w-max animate-[fadeLeft_0.5s_ease_forwards] px-8 text-[48px] opacity-0 before:absolute before:-bottom-1 before:left-0 before:block before:h-[5px] before:w-full before:rounded-full before:bg-[#7A83C6] before:content-['']">
+                Products
+              </h2>
+            </div>
+
             <div className="flex justify-center">
               <div className="new-arrival-card-container grid grid-cols-3 items-center justify-start gap-10">
-                <div className="new-arrival-card bg-white h-[370px] w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
+                <div className="new-arrival-card bg-white h-[370px] w-[300px] animate-[fadeInUp_0.5s_ease_0.5s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
                   <img
                     src="https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4="
                     alt="Product Image"
@@ -84,7 +79,7 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-                <div className="new-arrival-card bg-white h-[370px] w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
+                <div className="new-arrival-card bg-white h-[370px] w-[300px] animate-[fadeInUp_0.5s_ease_0.5s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
                   <img
                     src="https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4="
                     alt="Product Image"
@@ -106,7 +101,7 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-                <div className="new-arrival-card bg-white h-[370px] w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
+                <div className="new-arrival-card bg-white h-[370px] w-[300px] animate-[fadeInUp_0.5s_ease_0.5s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
                   <img
                     src="https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4="
                     alt="Product Image"
@@ -128,7 +123,7 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
-                <div className="new-arrival-card bg-white h-[370px] w-[300px] animate-[fadeInUp_0.5s_ease_1s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
+                <div className="new-arrival-card bg-white h-[370px] w-[300px] animate-[fadeInUp_0.5s_ease_0.5s_forwards] overflow-hidden rounded-lg opacity-0 shadow-md">
                   <img
                     src="https://media.istockphoto.com/id/1436061606/photo/flying-colorful-womens-sneaker-isolated-on-white-background-fashionable-stylish-sports-shoe.jpg?s=612x612&w=0&k=20&c=2KKjX9tXo0ibmBaPlflnJNdtZ-J77wrprVStaPL2Gj4="
                     alt="Product Image"
@@ -150,6 +145,60 @@ export default function Dashboard() {
                     </p>
                   </div>
                 </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-us-contianer mt-8 p-8 pb-16 pt-0">
+          <div class="mb-12 flex flex-col items-center justify-center text-center">
+            <h2 class="about-us-heading avenir-heavy relative mb-8 w-max animate-[fadeLeft_0.5s_ease_forwards] px-8 text-[48px] opacity-0 before:absolute before:-bottom-1 before:left-0 before:block before:h-[5px] before:w-full before:rounded-full before:bg-[#7A83C6] before:content-['']">
+              About Us
+            </h2>
+
+            <p class="avenir-heavy mt-4 animate-[fadeLeft_0.5s_ease_forwards] text-[38px] text-primaryGrey opacity-0">
+              <i>"Transforming technology into your competitive </i> edge."
+            </p>
+            <p class="avenir-light mt-4 animate-[fadeLeft_0.5s_ease_forwards] text-[18px] text-primaryGrey opacity-0">
+              Welcome to ConXioN! We specialize in providing top-quality
+              products and services tailored to <br /> meet your needs. Our
+              mission is to deliver excellence in everything we do.
+            </p>
+          </div>
+
+          <div class="grid grid-cols-3 gap-8">
+            <div class="dashboard-card flex animate-[fadeInUp_0.5s_ease_1s_forwards] flex-col items-center justify-between rounded-lg bg-[#7A83C6] p-6 text-center text-primaryWhite opacity-0">
+              <div class="icon-container mb-4 mr-4 flex justify-start text-paragraphGrey opacity-70">
+                <i class="fa-solid fa-bullseye text-[70px]"></i>
+              </div>
+              <h3 class="avenir-heavy pb-2 text-[28px]">Our Mission</h3>
+              <p class="avenir-medium text-[16px]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam eius velit molestiae voluptatem magnam rem qui earum
+                debitis exercitationem impedit.
+              </p>
+            </div>
+            <div class="dashboard-card flex animate-[fadeInUp_0.5s_ease_1.5s_forwards] flex-col items-center justify-between rounded-lg bg-[#EE7B88] p-6 text-center text-primaryWhite opacity-0">
+              <div class="icon-container mb-4 mr-4 flex justify-start text-paragraphGrey opacity-70">
+                <i class="fa-solid fa-users text-[70px]"></i>
+              </div>
+              <h3 class="avenir-heavy pb-2 text-[28px]">Our Team</h3>
+              <p class="avenir-medium text-[16px]">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Laboriosam eius velit molestiae voluptatem magnam rem qui earum
+                debitis exercitationem impedit.
+              </p>
+            </div>
+            <div class="dashboard-card flex animate-[fadeInUp_0.5s_ease_2s_forwards] flex-col items-center rounded-lg bg-[#00B894] p-6 text-center text-primaryWhite opacity-0">
+              <div class="icon-container mb-4 mr-4 flex justify-start text-paragraphGrey opacity-70">
+                <i class="fa-solid fa-envelope text-[70px]"></i>
+              </div>
+              <div>
+                <h3 class="avenir-heavy text-[28px]">Contact Us!</h3>
+                <p class="avenir-medium mt-2 text-[16px]">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                  Laboriosam eius velit molestiae voluptatem magnam rem qui
+                  earum debitis exercitationem impedit.
+                </p>
               </div>
             </div>
           </div>
