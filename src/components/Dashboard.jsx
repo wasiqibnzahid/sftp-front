@@ -34,7 +34,6 @@ export default function Dashboard() {
       const data = await response.json();
       const products = data;
       setProducts(products);
-      console.log(products);
     };
     fetchProductDetails();
   }, []);
@@ -72,9 +71,9 @@ export default function Dashboard() {
                       {true ? (
                         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sed ratione et perspiciatis, minima aliquam, natus repudiandae recusandae aspernatur ducimus eius. Molestiae reprehenderit itaque autem unde temporibus omnis veniam maiores ab. Amet impedit nihil accusamus. Assumenda harum minus explicabo tenetur esse repudiandae numquam, asperiores libero suscipit natus obcaecati quas, id dolorem, distinctio quibusdam. Consequatur pariatur deserunt illo perspiciatis, commodi esse nemo perferendis modi eum ducimus. Id odit nihil eveniet magnam ex quaerat ipsum enim corporis. Voluptatibus, numquam totam ullam ipsa quis dolores beatae sapiente earum expedita sit quo ipsam atque facilis magnam officia amet quibusdam voluptate ut animi possimus praesentium rerum? Laudantium ea laboriosam, nihil aperiam eius et consequatur rem, labore accusamus illum consectetur assumenda atque. Ab voluptate harum sit nemo distinctio officia nobis repellat accusantium deleniti inventore, similique provident quas libero. Fuga labore cupiditate itaque pariatur consequuntur repellat explicabo cumque nihil ducimus eaque aliquam excepturi repudiandae sint ut nulla dolore, iusto totam nesciunt nemo. Similique dolorum fuga corporis quod consequuntur voluptatum? Voluptatum illum architecto, repellendus autem pariatur recusandae suscipit obcaecati, consectetur expedita mollitia sunt. Nam velit expedita tenetur, id nisi provident blanditiis fugiat autem neque ducimus in voluptatem aspernatur, quam labore beatae. Nulla quos totam iusto qui molestiae perspiciatis?"
                       ) : (
-                        <div className="avernir-light italic text-paragraphGrey">
+                        <span className="avernir-light italic text-paragraphGrey">
                           No Product Description...
-                        </div>
+                        </span>
                       )}
                     </p>
                   </div>
@@ -94,9 +93,9 @@ export default function Dashboard() {
                       {false ? (
                         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sed ratione et perspiciatis, minima aliquam, natus repudiandae recusandae aspernatur ducimus eius. Molestiae reprehenderit itaque autem unde temporibus omnis veniam maiores ab. Amet impedit nihil accusamus. Assumenda harum minus explicabo tenetur esse repudiandae numquam, asperiores libero suscipit natus obcaecati quas, id dolorem, distinctio quibusdam. Consequatur pariatur deserunt illo perspiciatis, commodi esse nemo perferendis modi eum ducimus. Id odit nihil eveniet magnam ex quaerat ipsum enim corporis. Voluptatibus, numquam totam ullam ipsa quis dolores beatae sapiente earum expedita sit quo ipsam atque facilis magnam officia amet quibusdam voluptate ut animi possimus praesentium rerum? Laudantium ea laboriosam, nihil aperiam eius et consequatur rem, labore accusamus illum consectetur assumenda atque. Ab voluptate harum sit nemo distinctio officia nobis repellat accusantium deleniti inventore, similique provident quas libero. Fuga labore cupiditate itaque pariatur consequuntur repellat explicabo cumque nihil ducimus eaque aliquam excepturi repudiandae sint ut nulla dolore, iusto totam nesciunt nemo. Similique dolorum fuga corporis quod consequuntur voluptatum? Voluptatum illum architecto, repellendus autem pariatur recusandae suscipit obcaecati, consectetur expedita mollitia sunt. Nam velit expedita tenetur, id nisi provident blanditiis fugiat autem neque ducimus in voluptatem aspernatur, quam labore beatae. Nulla quos totam iusto qui molestiae perspiciatis?"
                       ) : (
-                        <div className="avernir-light italic text-paragraphGrey">
+                        <span className="avernir-light italic text-paragraphGrey">
                           No Product Description...
-                        </div>
+                        </span>
                       )}
                     </p>
                   </div>
@@ -116,9 +115,9 @@ export default function Dashboard() {
                       {true ? (
                         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sed ratione et perspiciatis, minima aliquam, natus repudiandae recusandae aspernatur ducimus eius. Molestiae reprehenderit itaque autem unde temporibus omnis veniam maiores ab. Amet impedit nihil accusamus. Assumenda harum minus explicabo tenetur esse repudiandae numquam, asperiores libero suscipit natus obcaecati quas, id dolorem, distinctio quibusdam. Consequatur pariatur deserunt illo perspiciatis, commodi esse nemo perferendis modi eum ducimus. Id odit nihil eveniet magnam ex quaerat ipsum enim corporis. Voluptatibus, numquam totam ullam ipsa quis dolores beatae sapiente earum expedita sit quo ipsam atque facilis magnam officia amet quibusdam voluptate ut animi possimus praesentium rerum? Laudantium ea laboriosam, nihil aperiam eius et consequatur rem, labore accusamus illum consectetur assumenda atque. Ab voluptate harum sit nemo distinctio officia nobis repellat accusantium deleniti inventore, similique provident quas libero. Fuga labore cupiditate itaque pariatur consequuntur repellat explicabo cumque nihil ducimus eaque aliquam excepturi repudiandae sint ut nulla dolore, iusto totam nesciunt nemo. Similique dolorum fuga corporis quod consequuntur voluptatum? Voluptatum illum architecto, repellendus autem pariatur recusandae suscipit obcaecati, consectetur expedita mollitia sunt. Nam velit expedita tenetur, id nisi provident blanditiis fugiat autem neque ducimus in voluptatem aspernatur, quam labore beatae. Nulla quos totam iusto qui molestiae perspiciatis?"
                       ) : (
-                        <div className="avernir-light italic text-paragraphGrey">
+                        <span className="avernir-light italic text-paragraphGrey">
                           No Product Description...
-                        </div>
+                        </span>
                       )}
                     </p>
                   </div>
@@ -138,9 +137,9 @@ export default function Dashboard() {
                       {true ? (
                         "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sed ratione et perspiciatis, minima aliquam, natus repudiandae recusandae aspernatur ducimus eius. Molestiae reprehenderit itaque autem unde temporibus omnis veniam maiores ab. Amet impedit nihil accusamus. Assumenda harum minus explicabo tenetur esse repudiandae numquam, asperiores libero suscipit natus obcaecati quas, id dolorem, distinctio quibusdam. Consequatur pariatur deserunt illo perspiciatis, commodi esse nemo perferendis modi eum ducimus. Id odit nihil eveniet magnam ex quaerat ipsum enim corporis. Voluptatibus, numquam totam ullam ipsa quis dolores beatae sapiente earum expedita sit quo ipsam atque facilis magnam officia amet quibusdam voluptate ut animi possimus praesentium rerum? Laudantium ea laboriosam, nihil aperiam eius et consequatur rem, labore accusamus illum consectetur assumenda atque. Ab voluptate harum sit nemo distinctio officia nobis repellat accusantium deleniti inventore, similique provident quas libero. Fuga labore cupiditate itaque pariatur consequuntur repellat explicabo cumque nihil ducimus eaque aliquam excepturi repudiandae sint ut nulla dolore, iusto totam nesciunt nemo. Similique dolorum fuga corporis quod consequuntur voluptatum? Voluptatum illum architecto, repellendus autem pariatur recusandae suscipit obcaecati, consectetur expedita mollitia sunt. Nam velit expedita tenetur, id nisi provident blanditiis fugiat autem neque ducimus in voluptatem aspernatur, quam labore beatae. Nulla quos totam iusto qui molestiae perspiciatis?"
                       ) : (
-                        <div className="avernir-light italic text-paragraphGrey">
+                        <span className="avernir-light italic text-paragraphGrey">
                           No Product Description...
-                        </div>
+                        </span>
                       )}
                     </p>
                   </div>
