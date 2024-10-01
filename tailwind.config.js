@@ -13,6 +13,7 @@ export default {
       resposeGrey: "#E5E9EC",
       inputActive: "#3578BE",
       alertRed: "#D81933",
+      black: "#000",
     },
   },
   plugins: [],

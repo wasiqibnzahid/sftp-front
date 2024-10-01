@@ -3,6 +3,12 @@ import Button from "./Button.jsx";
 import { useNavigate } from "react-router-dom";
 export default function Navbar({ productId, setProductId, handleSearch }) {
   const navigate = useNavigate();
+  function handleEnter(event) {
+    if (event.key === "Enter") {
+      handleSearch();
+      setProductId("")
+    }
+  }
   return (
     <nav className="w-full">
       <div className="nav-container flex items-center justify-between p-8">
@@ -23,6 +29,7 @@ export default function Navbar({ productId, setProductId, handleSearch }) {
             type="search"
             value={productId}
             onChange={(e) => setProductId(e.target.value)}
+            onKeyDown={handleEnter}
             className="avenir-light mr-3 w-[200px] rounded-md border border-solid border-resposeGrey p-[9px] pl-9 text-paragraphGrey outline-none focus:border-inputActive active:border-inputActive"
           />
           <Button text="Search" onClick={handleSearch}></Button>
