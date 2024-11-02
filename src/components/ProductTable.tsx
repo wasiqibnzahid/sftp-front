@@ -92,7 +92,7 @@ const ProductTable: React.FC<{ data: IProduct[] }> = ({
               {item?.available_next_date?.replaceAll(".", "-") || "-"}
             </td>
             <td className="avenir-light text-gray-500 w-1/5 whitespace-nowrap px-6 py-4 text-center text-sm">
-              {item?.price ? `$${item?.price}` : "-"}
+              {item?.price ? `€${item?.price}` : "-"}
             </td>
           </tr>
         ))}

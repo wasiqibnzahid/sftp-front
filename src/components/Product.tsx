@@ -1,7 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { useNavigate, useParams } from "react-router-dom";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import ProductTable from "./ProductTable";
-import Navbar from "./Navbar.tsx";
+import Navbar from "./Navbar";
 import {
   fetchDashboardProducts,
   fetchProductsById,
@@ -12,10 +12,12 @@ export default function Product() {
   const [animationTrigger, setAnimationTrigger] = useState("");
   const inStock = true;
   // Navigate
+  const location = useLocation();
+
   const navigate = useNavigate();
   const handleSearch = () => {
     if (productId) {
-      navigate(`/product/${productId}`);
+      navigate(`/search/${productId}`);
     }
   };
 
@@ -28,13 +30,14 @@ export default function Product() {
   useEffect(() => {
     const fetchProductDetails = async () => {
       setLoading(true);
-      const data = await fetchProductsById(id!).catch((e) => []);
+      const idToUse = encodeURIComponent(id + (location.hash || ""));
+      const data = await fetchProductsById(idToUse).catch((e) => []);
       setLoading(false);
       setProducts(data);
     };
 
     fetchProductDetails();
-  }, [id]);
+  }, [id, location.hash]);
   // Search Enter Event listener
 
   const { description, imgUrl } = useMemo(() => {
@@ -72,7 +75,7 @@ export default function Product() {
               <div className="product-category avenir-light text-[22px] text-paragraphGrey text-opacity-85">
                 Product
               </div>
-              <div className="product-title avenir-heavy text-[32px]">{id}</div>
+              <div className="product-title avenir-heavy text-[32px]">{id + (location.hash || "")}</div>
               <div className="product-discription mt-4">
                 <p className="avenir-light text-[18px] text-paragraphGrey">
                   {description}

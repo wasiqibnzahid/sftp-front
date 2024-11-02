@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "./Button.jsx";
 import { useNavigate } from "react-router-dom";
-export default function Navbar({ productId, setProductId, handleSearch }) {
+export default function Navbar({ productId, setProductId, handleSearch, inputVal="" }) {
   const navigate = useNavigate();
   function handleEnter(event) {
     if (event.key === "Enter") {

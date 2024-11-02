@@ -16,6 +16,11 @@ export async function fetchDashboardProducts(): Promise<IProduct[]> {
     return res.data;
   });
 }
+export async function searchProducts(text: string): Promise<IProduct[]> {
+  return axios.get(`${baseUrl}/search/${text}`).then((res) => {
+    return res.data;
+  });
+}
 export async function fetchProductsById(id: string): Promise<IProduct[]> {
   return axios.get(`${baseUrl}/product/${id}`).then((res) => {
     return res.data;

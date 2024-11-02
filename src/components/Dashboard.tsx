@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "./Navbar.tsx";
+import Navbar from "./Navbar";
 import { Link, useNavigate } from "react-router-dom";
 import { fetchDashboardProducts, IProduct } from "../services/api.ts";
 
@@ -10,7 +10,7 @@ export default function Dashboard() {
   const navigate = useNavigate();
   const handleSearch = () => {
     if (productId) {
-      navigate(`/product/${productId}`);
+      navigate(`/search/${productId}`);
     }
   };
   useEffect(() => {
@@ -49,7 +49,7 @@ export default function Dashboard() {
                       className="new-arrival-card bg-white h-full animate-[fadeInUp_0.5s_ease_0.5s_forwards] cursor-pointer overflow-hidden rounded-lg opacity-0 shadow-md"
                     >
                       <img
-                        src={prod.img_url}
+                        src={prod?.img_url || "https://psediting.websites.co.in/obaju-turquoise/img/product-placeholder.png"}
                         alt="Product Image"
                         className="h-[60%] w-full max-w-[100%] object-contain"
                       />
